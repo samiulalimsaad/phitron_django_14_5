@@ -20,5 +20,6 @@ from form_practice import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("test/", views.index, name="form_test"),
+    path("", views.index, name="form_test"),
+    path("test/", views.form, name="form_test"),
 ]
