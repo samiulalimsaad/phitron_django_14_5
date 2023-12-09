@@ -22,4 +22,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", views.index, name="form_test"),
     path("test/", views.form, name="form_test"),
+    path("test_form/", views.test_form, name="test_form"),
 ]

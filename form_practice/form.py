@@ -2,6 +2,8 @@
 # from built-in library
 from django import forms
 
+from form_practice.model import TestModal
+
 FAVORITE_COLORS_CHOICES = [
     ("blue", "Blue"),
     ("green", "Green"),
@@ -26,3 +28,9 @@ class InputForm(forms.Form):
     profile_image = forms.FileField()
 
     agree = forms.BooleanField(label="Agree")
+
+
+class TestForm(forms.ModelForm):
+    class Meta:
+        model = TestModal
+        fields = "__all__"
